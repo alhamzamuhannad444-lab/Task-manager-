@@ -45,9 +45,12 @@ jobs:
       run: |
         buildozer -v android debug
 
-    - name: Upload APK
+    -     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: package
         path: bin/*.apk
+      env:
+        ACTIONS_ALLOW_UNSECURE_NODE_VERSION: 'true'
+        
         
