@@ -3,6 +3,7 @@ name: Build Android APK
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -32,7 +33,7 @@ jobs:
 
     - name: Build with Buildozer
       run: |
-        buildozer -v android debug
+        yes | buildozer -v android debug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
