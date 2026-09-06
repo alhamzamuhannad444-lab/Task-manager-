@@ -9,4 +9,5 @@ requirements = python3,kivy,plyer
 orientation = portrait
 fullscreen = 0
 android.permissions = VIBRATE
+android.accept_sdk_license = True
 
