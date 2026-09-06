@@ -33,7 +33,6 @@ jobs:
 
     - name: Build with Buildozer
       run: |
-        buildozer android clean
         yes | buildozer -v android debug
         
     - name: Upload APK
