@@ -5,7 +5,7 @@ package.domain = org.test
 source.dir = .
 source.exts = py,png,jpg,kv,atlas
 version = 0.1
-requirements = python3,kivy,plyer
+requirements = python3==3.11.0,kivy
 orientation = portrait
 fullscreen = 0
 android.permissions = VIBRATE
